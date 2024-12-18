@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire et Quiz</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1 class="title">FORMULAIRE ET QUIZ</h1>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../CV/cv.html">CV</a></li>
+        <li class="page">
+          <a href="../Formulaire_et_Quiz/forum_quiz.html">Formulaire et Quiz</a>
+        </li>
+        <li><a href="../sport/sport.html">Sport et Qualités</a></li>
+        <li><a href="../R.S/R_S.html">Contact</a></li>
+      </ul>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#formulaire">Formulaire</a></li>
+        <li><a href="#histoire-questions">Histoire</a></li>
+        <li><a href="#geo-questions">Géographie</a></li>
+        <li><a href="#sc-questions">Science</a></li>
+        <li><a href="#litt-questions">Littérature</a></li>
+        <li><a href="#sport-questions">Sport</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <form method="post" id="quiz-form">
+        <section role="region" aria-labelledby="formulaire">
+          <h2 id="formulaire">Formulaire</h2>
+
+          <div class="info">
+            <label for="nom">Nom:</label>
+            <input
+              type="text"
+              name="nom"
+              id="nom"
+              placeholder="Entrer votre nom"
+              required
+            />
+          </div>
+
+          <div class="info">
+            <label for="prenom">Prénom:</label>
+            <input
+              type="text"
+              name="prenom"
+              id="prenom"
+              placeholder="entrer votre prénom"
+              required
+            />
+          </div>
+
+          <div class="info">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="exemple@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="info">
+            <label for="naissance">D/N:</label>
+            <input type="date" name="naissance" id="naissance" required />
+          </div>
+        </section>
+
+        <section role="region" aria-labelledby="histoire-questions">
+          <h2 id="histoire-questions">Histoire</h2>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>1</h3>
+            <fieldset class="question" name="histoire-question-one">
+              <legend>Qui a été le premier président des États-Unis ?</legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="his_q1-a1" name="his_q1" />
+                    Abraham Lincoln
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="his_q1-a2" name="his_q1" />
+                    George Washington
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a3">
+                    <input type="radio" id="his_q1-a3" name="his_q1" />
+                    Thomas Jefferson
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>2</h3>
+            <fieldset class="question" name="histoire-question-two">
+              <legend>
+                En quelle année la Révolution française a-t-elle commencé ?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="his_q2-a1" name="his_q2" />
+                    1776
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="his_q2-a2" name="his_q2" />
+                    1789
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="his_q2-a2" name="his_q2" />
+                    1815
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>3</h3>
+            <fieldset class="question" name="histoire-question-three">
+              <legend>Qui a découvert l'Amérique et en quelle année ?</legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q3-a1">
+                    <input type="radio" id="his_q3-a1" name="his_q3" />
+                    Christophe Colomb en 1492
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-a2">
+                    <input type="radio" id="his_q3-a2" name="his_q3" />
+                    Marco Polo en 1324
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-a2">
+                    <input type="radio" id="his_q3-a2" name="his_q3" />
+                    Vasco de Gama en 1498
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+
+        <section role="region" aria-labelledby="geo-questions">
+          <h2 id="geo-questions">Géographie</h2>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>1</h3>
+            <fieldset class="question" name="geo-question-one">
+              <legend>Quel est le plus grand désert du monde ?</legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="geo_q1-a1">
+                    <input type="radio" id="geo_q1-a1" name="geo_q1" />
+                    Le Sahara
+                  </label>
+                </li>
+                <li>
+                  <label for="geo_q1-a2">
+                    <input type="radio" id="geo_q1-a2" name="geo_q1" />
+                    L'Antarctique
+                  </label>
+                </li>
+                <li>
+                  <label for="geo_q1-a3">
+                    <input type="radio" id="geo_q1-a3" name="geo_q1" />
+                    Le Gobi
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>2</h3>
+            <fieldset class="question" name="geo-question-two">
+              <legend>Quelle est la capitale du Brésil ?</legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="geo_q2-a1">
+                    <input type="radio" id="geo_q2-a1" name="geo_q2" />
+                    Rio de Janeiro
+                  </label>
+                </li>
+                <li>
+                  <label for="geo_q2-a2">
+                    <input type="radio" id="geo_q2-a2" name="geo_q2" />
+                    Brasilia
+                  </label>
+                </li>
+                <li>
+                  <label for="geo_q2-a3">
+                    <input type="radio" id="geo_q2-a3" name="geo_q2" />
+                    São Paulo
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>3</h3>
+            <fieldset class="question" name="histoire-question-three">
+              <legend>
+                Dans quel pays se trouvent les montagnes Rocheuses ?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="geo_q3-a1">
+                    <input type="radio" id="geoq3-a1" name="geo_q3" />
+                    États-Unis
+                  </label>
+                </li>
+                <li>
+                  <label for="geo_q3-a2">
+                    <input type="radio" id="geoq3-a2" name="geo_q3" />
+                    Canada
+                  </label>
+                </li>
+                <li>
+                  <label for="geo_q3-a3">
+                    <input type="radio" id="geoq3-a3" name="geo_q3" />
+                    Mexique
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+
+        <section role="region" aria-labelledby="sc-questions">
+          <h2 id="sc-questions">Science</h2>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>1</h3>
+            <fieldset class="question" name="sc-question-one">
+              <legend>Quel est le symbole chimique de l'oxygène ?</legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="sc_q1-a1" name="sc_q1" />
+                    H
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="sc_q1-a2" name="sc_q1" />
+                    O
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a3">
+                    <input type="radio" id="sc_q1-a3" name="sc_q1" />
+                    C
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>2</h3>
+            <fieldset class="question" name="geo-question-two">
+              <legend>
+                Qui est connu comme le père de la théorie de la relativité ?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="sc_q2-a1" name="sc_q2" />
+                    Isaac Newton
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="sc_q2-a2" name="sc_q2" />
+                    Nikola Tesla
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a3">
+                    <input type="radio" id="sc_q2-a3" name="sc_q2" />
+                    Albert Einstein
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>3</h3>
+            <fieldset class="question" name="sc-question-one">
+              <legend>Quelle planète est la plus proche du Soleil ?</legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q3-a1">
+                    <input type="radio" id="sc_q3-a1" name="sc_q1" />
+                    Vénus
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-a2">
+                    <input type="radio" id="sc_q3-a2" name="sc_q1" />
+                    Mercure
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-a3">
+                    <input type="radio" id="sc_q3-a3" name="sc_q1" />
+                    Mars
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+
+        <section role="region" aria-labelledby="litt-questions">
+          <h2 id="litt-questions">Littérature</h2>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>1</h3>
+            <fieldset class="question" name="litt-question-one">
+              <legend>Qui a écrit Les Misérables ?</legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="litt_q1-a1" name="litt_q1" />
+                    Victor Hugo
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="litt_q1-a2" name="litt_q1" />
+                    Émile Zola
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a3">
+                    <input type="radio" id="litt_q1-a3" name="litt_q1" />
+                    Alexandre Dumas
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>2</h3>
+            <fieldset class="question" name="litt-question-two">
+              <legend>
+                Quel est le titre du premier roman de J.K. Rowling ?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="litt_q2-a1" name="litt_q2" />
+                    Le Seigneur des Anneaux
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="litt_q2-a2" name="litt_q2" />
+                    Harry Potter à l'école des sorciers
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a3">
+                    <input type="radio" id="litt_q2-a3" name="litt_q2" />
+                    Le Monde de Narnia
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>3</h3>
+            <fieldset class="question" name="litt-question-three">
+              <legend>
+                Quel auteur a créé le personnage de Sherlock Holmes ?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q3-a1">
+                    <input type="radio" id="litt_q3-a1" name="litt_q3" />
+                    Arthur Conan Doyle
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-a2">
+                    <input type="radio" id="litt_q3-a2" name="litt_q3" />
+                    Agatha Christie
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-a3">
+                    <input type="radio" id="litt_q3-a3" name="litt_q3" />
+                    Jules Verne
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+
+        <section role="region" aria-labelledby="sport-questions">
+          <h2 id="sport-questions">Sport</h2>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>1</h3>
+            <fieldset class="question" name="sport-question-one">
+              <legend>
+                Dans quel sport Michael Jordan est-il devenu une légende ?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q1-a1">
+                    <input type="radio" id="sport_q1-a1" name="sp_q1" />
+                    Basketball
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a2">
+                    <input type="radio" id="sport_q1-a2" name="sp_q1" />
+                    Football
+                  </label>
+                </li>
+                <li>
+                  <label for="q1-a3">
+                    <input type="radio" id="sportt_q1-a3" name="sp_q1" />
+                    Baseball
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>2</h3>
+            <fieldset class="question" name="sport-question-one">
+              <legend>
+                Combien de joueurs y a-t-il dans une équipe de football ?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q2-a1">
+                    <input type="radio" id="sportsport_q2-a1" name="sp_q2" />
+                    9
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a2">
+                    <input type="radio" id="sport_q2-a2" name="sp_q2" />
+                    11
+                  </label>
+                </li>
+                <li>
+                  <label for="q2-a3">
+                    <input type="radio" id="sport_q2-a3" name="sp_q2" />
+                    15
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+
+          <div class="question-block">
+            <h3><span class="sr-only">Question</span>3</h3>
+            <fieldset class="question" name="sport-question-three">
+              <legend>
+                Quel pays a remporté la Coupe du Monde de la FIFA en 2018 ?
+              </legend>
+              <ul class="answers-list">
+                <li>
+                  <label for="q3-a1">
+                    <input type="radio" id="sport_q3-a1" name="sp_q3" />
+                    Allemagne
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-a2">
+                    <input type="radio" id="sport_q3-a2" name="sp_q3" />
+                    France
+                  </label>
+                </li>
+                <li>
+                  <label for="q3-a3">
+                    <input type="radio" id="sport_q3-a3" name="sp_q3" />
+                    Croatie
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+          </div>
+        </section>
+        <p id="quiz-result" style="text-align: center"></p>
+
+        <button type="submit" id="submit-quiz" style="margin-bottom: 200px">
+          Envoyer
+        </button>
+      </form>
+    </main>
+
+    <footer>
+      <address>
+        Si vous avez des questions, vous me contactez sur
+        <a href="mailto:azizessid60@gmail.com?subject=new&body= new email"
+          >azizessid60@gmail.com</a
+        ><br />
+        n° de tel: 25 659 965 <br />
+        Adresse: Sfax, Tunisie <br />
+      </address>
+    </footer>
+
+    <script src="../js/script.js"></script>
+  </body>
+</html>
